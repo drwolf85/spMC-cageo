@@ -14,6 +14,9 @@ spMC: an R-package for 3D lithological reconstructions based on spatial Markov c
 
 Corresponding author: [Luca Sartore, luca.sartore@unive.it](mailto://luca.sartore@unive.it)
 
+[![](http://www.r-pkg.org/badges/version/spMC)](http://www.r-pkg.org/pkg/spMC)
+[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/spMC)](http://www.r-pkg.org/pkg/spMC)
+
 Abstract
 --------
 
