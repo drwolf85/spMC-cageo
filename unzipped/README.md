@@ -3,7 +3,7 @@
 ## spMC: an R-package for 3D lithological reconstructions based on spatial Markov chains
 
 ### Authors information
-[Luca Sartore](mailto://luca.sartore@unive.it)^1, [Paolo Fabbri](paolo.fabbri@unipd.it)^2, [Carlo Gaetan](mailto://gaetan@unive.it)^1
+[Luca Sartore](mailto://luca.sartore@unive.it)<sup>1</sup>, [Paolo Fabbri](paolo.fabbri@unipd.it)<sup>2</sup>, [Carlo Gaetan](mailto://gaetan@unive.it)<sup>1</sup>
 
   1. Dipartimento di Scienze Ambientali, Informatica e Statistica,
      Università "Ca' Foscari" di Venezia,
