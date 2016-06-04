@@ -1,7 +1,5 @@
 # spMC
 
-[TOC]
-
 ## spMC: an R-package for 3D lithological reconstructions based on spatial Markov chains
 
 ### Authors information
