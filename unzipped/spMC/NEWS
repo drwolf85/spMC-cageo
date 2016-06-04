@@ -1,0 +1,197 @@
+spMC News
+
+CHANGES IN spMC 0.3.7
+
+  BUG FIXES:
+    o sim_mcs() returns more accurate probabilities, and reliable
+      predictions.
+
+CHANGES IN spMC 0.3.6
+
+  BUG FIXES:
+    o the example of the tpfit_me() function now provides consistent
+      results.
+
+CHANGES IN spMC 0.3.5
+
+  BUG FIXES:
+    o mlen() now returns more accurate results with "avg" method.
+
+    o "transCount" consider all directions between couple of points.
+
+    o the C code was fixed in order to be compatible with OpenMP 4.0.
+
+    o the deprecated which.lines() function is now replaced by 
+      which_lines() in all the examples of the manual.
+
+CHANGES IN spMC 0.3.4
+
+  BUG FIXES:
+    o an uninitialized variable was fixed in the C procedure
+      "transCount" when dealing with OpenMP 3.1.
+
+    o unused variabels were removed from the C procedure "nsph2".
+
+    o unused values were fixed in the C procedures "nsph2" and 
+      "nsph".
+
+CHANGES IN spMC 0.3.3
+
+  NEW FEATURES: 
+    o quench() function is introduced to reproduce the optimizations
+      algorithms, which are required for removing spatial artifacts
+      from the simulations.
+
+    o transiogram() function computes also the log-odds standard error
+      which will be used to draw confidence intervals for transition
+      probabilities.
+
+    o plot.transiogram() can draw confidence intervals around
+      empirical transition probabilities.
+
+  BUG FIXES:
+    o transiogram() has increased accuracy on non-autotransition
+      probabilities calculation.
+
+    o pemt() has improved probabilities calculation for multiple
+      directions.
+
+  DEPRECATED AND DEFUNCT:
+    o the arguments GA, optype and max.it in functions sim_ik() and
+      sim_ck() are defunct. Simulation optimization is performed by
+      the quench() function.
+
+CHANGES IN spMC 0.3.2
+
+  NEW FEATURES: 
+    o pers.multi_tpfit() will produce perspective plots for 
+      theoretical multidimensional transiograms.
+
+    o perp.pemt() will produce perspective plots for 
+      pseudo-empirical multidimensional transiograms.
+
+    o sim(), sim_ck(), sim_ik(), sim_mcs() and sim_path() are now
+      returning an object of class "data.frame" and "spsim".
+
+    o tpfit(), tpfit_ml(), tpfit_ils(), tpfit_me(), multi_tpfit(),
+      multi_tpfit_ml(), multi_tpfit_ils(), multi_tpfit_me(), mlen()
+      and pemt() allows for the choice among serveral mean lengths 
+      estimation method through the argument "mle".
+
+    o transiogram() can also compute empirical probabilities for
+      reversible chains throught the argument "reverse".
+
+  UTILITIES:
+    o Other robust methods are implemented for computing more
+      reliable mean lengths. The choice can be perfrome among
+      the averaging method ("avg"), the maximum likelihood estimator
+      ("mlk"), trimmed average ("trm") or trimmed median ("mdn").
+
+  DEPRECATED AND DEFUNCT:
+    o the arguments GA, optype and max.it in functions sim_ik() and
+      sim_ck() are deprecated. They will be considered defunct from
+      next version release.
+    
+    o tpfit(mle = FALSE) is deprecated.
+
+    o tpfit_ml(mle = FALSE) is deprecated.
+
+    o tpfit_ils(mle = FALSE) is deprecated.
+
+    o tpfit_me(mle = FALSE) is deprecated.
+
+    o multi_tpfit(mle = FALSE) is deprecated.
+
+    o multi_tpfit_ml(mle = FALSE) is deprecated.
+
+    o multi_tpfit_ils(mle = FALSE) is deprecated.
+
+    o multi_tpfit_me(mle = FALSE) is deprecated.
+
+    o mlen(mle = FALSE) is deprecated.
+
+    o pemt(mle = FALSE) is deprecated.
+
+  BUG FIXES:
+    o The polar transformation performed by the C procedure "nsph"
+      was not much accurate, and computationally inefficient.
+
+    o Memory bugs were fixed for C procedures "getCKPrbs", 
+      "getIKPrbs", "nsph" and "transCount".
+
+    o colors correspondence between transiograms and legend was fixed
+      in functions image.multi_tpfit() and image.pemt().
+
+CHANGES IN spMC 0.3.1
+
+  NEW FEATURES:
+    o tpfit_ml(), tpfit_ils(), tpfit_me(), multi_tpfit_ml(), 
+      multi_tpfit_ils(), multi_tpfit_me() and other functions are
+      introduced for R-methods consistency (see list of deprecated
+      and defunct functions).
+
+    o multi_tpfit() and tpfit() may perform all the other estimation
+      methods by the use of the new argument method.
+
+    o sim() may simulate and predict with all the available methods.
+
+  UTILITIES:
+    o contour.pemt() display contours of the pseudo-empirical 
+      multidimensional and superpose the contour lines of the 
+      theoretical transition probabilities.
+
+    o image.pemt() plot the pseudo-empirical multidimensional 
+      transiograms, which where previously computed.
+
+    o is.pemt() tests an object if it is of the class 'pemt'.
+
+    o pemt() returns pseudo-empirical multidimensional transiograms.
+
+  DEPRECATED AND DEFUNCT:
+    o ck.sim() is defunct. Use sim_ck() instead.
+
+    o embed.MC() is defunct. Use embed_MC() instead.
+
+    o ik.sim() is defunct. Use sim_ik() instead.
+
+    o ilstpfit() and multi.ilstpfit() are defunct. 
+
+      Iterated least squares are available by the use of the functions
+      tpfit_ils() or multi_tpfit_ils().
+
+    o image.multi.tpfit() is defunct. Use image.multi_tpfit() instead.
+
+    o imgMultiTransiogram() is defunct.
+
+      Pseudo-empirical multidimensional transiograms are now computed 
+      first by the function pemt() and then plotted through 
+      image.pemt().
+
+    o is.multi.tpfit() is defunct. Use is.multi_tpfit() instead.
+
+    o is.multi.transiogram() is defunct. Use is.multi_transiogram()
+      instead.
+
+    o mcs.sim() is defunct. Use sim_mcs() instead.
+
+    o metpfit and multi.metpfit() are defunct.
+
+      Maximum entropy methods is available by the use of the functions
+      tpfit_me() or multi_tpfit_me().
+
+    o multi.tpfit() is defunct.
+
+      Multidimensional version of tpfit() is available by the use of
+      the function multi_tpfit().
+
+    o path.sim() is defunct. Use sim_path() instead.
+
+    o predict.multi.tpfit() is defunct. Use predict.multi_tpfit()
+      instead.
+
+    o print.multi.tpfit() is defunct. Use print.multi_tpfit() instead.
+
+    o print.multi.transiogram() is defunct. Use 
+      print.multi_transiogram() instead.
+
+    o which.lines() is defunct. Use which_lines().
