@@ -36,7 +36,7 @@ Sartore, L., Fabbri, P. and Gaetan, C. (submitted). spMC: an R-package for 3D li
 Instruction
 -----------
 
-Extract the file `spMC.zip` and read other details in the extracted file `README.html`.
+Extract the file `spMC.zip` and read other details in the extracted file `README.html`. The source code of the most recent version of the *spMC* package published on cran can be found at [here](https://github.com/cran/spMC). The folder `unzipped` contains the files compressed in `spMC.zip`.
 
 License
 -------
