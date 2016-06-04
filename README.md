@@ -14,6 +14,8 @@ spMC: an R-package for 3D lithological reconstructions based on spatial Markov c
 
 Corresponding author: [Luca Sartore, luca.sartore@unive.it](mailto://luca.sartore@unive.it)
 
+**The source code of the most recent version of the *spMC* package published on CRAN website can be found at [here](https://github.com/cran/spMC).**
+
 [![](http://www.r-pkg.org/badges/version/spMC)](http://www.r-pkg.org/pkg/spMC)
 [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/spMC)](http://www.r-pkg.org/pkg/spMC)
 
@@ -36,7 +38,7 @@ Sartore, L., Fabbri, P. and Gaetan, C. (submitted). spMC: an R-package for 3D li
 Instruction
 -----------
 
-Extract the file `spMC.zip` and read other details in the extracted file `README.html`. The source code of the most recent version of the *spMC* package published on cran can be found at [here](https://github.com/cran/spMC). The folder `unzipped` contains the files compressed in `spMC.zip`.
+Extract the file `spMC.zip` and read other details in the extracted file `README.html`. Whenever the device in use cannot deal with zip files, the folder `unzipped` contains the files compressed in `spMC.zip`.
 
 License
 -------
