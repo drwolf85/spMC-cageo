@@ -34,7 +34,7 @@ Keywords: Categorical data, Transition probabilities, Transiogram modeling, Indi
 Citation
 --------
 
-Sartore, L., Fabbri, P. and Gaetan, C. (submitted). spMC: an R-package for 3D lithological reconstructions based on spatial Markov chains
+Sartore, L., Fabbri, P. and Gaetan, C. (2016). spMC: an R-package for 3D lithological reconstructions based on spatial Markov chains
 
 Instruction
 -----------
